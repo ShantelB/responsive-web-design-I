@@ -109,7 +109,7 @@ header {
 
 header #header h1 {
     /*display:flex;*/
-	width: 44%;
+	width: 100%;
     /*flex-direction: column;
     flex-wrap: wrap;*/
     height: 1vh;
@@ -206,20 +206,21 @@ footer {
 
 @media (max-width:800px) {
     nav {
-        display: flex;
+       display: flex;
         flex-direction:column-reverse ;
         /*justify-content: first baseline;*/
         background-color: blue;
-        width:100%
+        width:100%;
     }
-    nav button {
+   nav #nav-button {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+       flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
         width: 100%;
     }
 
-    .image1{
+    .image1 {
         width:100%;
         display: flex;
         justify-content:center;
@@ -229,32 +230,59 @@ footer {
         display: none;
     }
 
-    .header {
+    #header {
         display: flex;
         flex-direction: column;
+        border: 1px solid black;
+        text-align: center;
     }
 
+
     header #header h1 {
-        display: flex;
-       flex-direction: column-reverse;
-        justify-content: space-around;
-        /*align-items: center;*/
-        flex-wrap: wrap;
+        border: 1px solid black;
         text-align: center;
-        height: 50vh;
-        width: 70%;
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: center;
+        padding: 0;
+       
+    }
+
     }
     header #header button {
         display: flex;
-        align-content: center;
-        padding-right: 1%;
-        text-align: center;
         align-items: center;
-        /*flex-direction: flex-end;
-        justify-content: center;*/
-        width:30%;
-        margin-top: 82%;
-        height: 6vh;
-
+        justify-content: center;
+        width:33%;
+        margin-left: 40%;
     }
+
+    .block1 {
+        justify-content: center;
+        flex-wrap: wrap;
+        width:100%;
+        border: 1px solid black;
+    }
+    .block1 div {
+        border: 1px solid black;
+        width: 49%;
+    }
+
+    .middle-img {
+        justify-content: center;
+        width: 100%;
+        padding-right: 4%;
+    }
+
+    .block2 {
+        justify-content: center;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .block2 div {
+        border: 1px solid black;
+        
+    }
+
 }
